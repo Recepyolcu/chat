@@ -2,9 +2,9 @@ const express = require('express');
 const socket = require('socket.io');
 
 const app = express();
-const server = app.listen(3000);
+const server = app.listen(443);
 
-app.use(express.static('public'));
+app.use(express.static('https://recepyolcu.github.io/chat/public'));
 
 const io = socket(server);
 

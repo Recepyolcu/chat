@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.js" integrity="sha512-rwu37NnL8piEGiFhe2c5j4GahN+gFsIn9k/0hkRY44iz0pc81tBNaUN56qF8X4fy+5pgAAgYi2C9FXdetne5sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Helloo</title>
+</head>
+<body>
+
+    <div id="chat-wrapper">
+
+        <div id="header">
+            <div class="profile">
+                <div>
+                    <img id="profile-photo" src="./img/me.jpg" alt="profile-photo">
+                    <h2 id="sender"></h2>
+                </div>
+            </div>
+            
+            <div class="video-call">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="30" viewBox="0 0 41 30" fill="none">
+                        <path d="M1 5.53199C1 3.03231 3.04289 1 5.55556 1H23.7778C26.2905 1 28.3333 3.03231 28.3333 5.53199V23.6599C28.3333 26.1596 26.2905 28.1919 23.7778 28.1919H5.55556C3.04289 28.1919 1 26.1596 1 23.6599V5.53199ZM38.7971 3.53508C39.5373 3.93163 40 4.6964 40 5.53199V23.6599C40 24.4955 39.5373 25.2603 38.7971 25.6569C38.0568 26.0534 37.1599 26.0109 36.4552 25.5436L29.6219 21.0116V21.0116C28.9922 20.5925 28.6111 19.8844 28.6111 19.128V19.128V10.064V10.064C28.6111 9.30756 28.9922 8.59947 29.6219 8.18037V8.18037L36.4552 3.64838C37.1528 3.1881 38.0497 3.13853 38.7971 3.53508Z" stroke="white" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+            
+        </div>
+        
+        <div id="output">
+
+        </div>
+        
+        <div id="feedback"></div>
+        <div id="input">
+            <input type="text" id="message" placeholder="Message...">
+            <button id="submit-btn" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <path d="M7.05273 16.5783C7.60501 16.5783 8.05273 16.1306 8.05273 15.5783V11.6019V6.8291C8.05273 5.93642 9.13353 5.49106 9.76243 6.12459L10.9881 7.3593C11.488 7.86288 12.2998 7.86288 12.7997 7.3593C13.2996 6.85573 13.2996 6.03791 12.7997 5.53433L7.68081 0.377684C7.18091 -0.125895 6.36909 -0.125895 5.86919 0.377684L0.750286 5.53433C0.250393 6.03791 0.250393 6.85573 0.750286 7.3593C1.25018 7.86288 2.06201 7.86288 2.5619 7.3593L3.7831 6.12743C4.41179 5.49323 5.49327 5.93844 5.49327 6.83145V11.6019V15.5783C5.49327 16.1306 5.94099 16.5783 6.49327 16.5783H7.05273Z" fill="#D9D9D9"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    
+    <script src="chat.js" charset="UTF-8"></script>
+</body>
+</html>

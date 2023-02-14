@@ -1,4 +1,4 @@
-const socket = io.connect('192.168.1.125/pearl/public/');
+const socket = io.connect('https://recepyolcu.github.io/chat/public/');
 
 const sender = document.getElementById('sender');
 const user2PP = document.getElementById('profile-photo');
